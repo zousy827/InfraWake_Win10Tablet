@@ -17,7 +17,8 @@ python程序的小窗口不美观 不能干掉影响用户体验
 不同主机的红外识别的寄存器值不一样，要做特征识别
 优化CPU占用率和识别速度
 
-部署
+部署：
+
 BIOS按照文档将GPIO77设置为INPUT
 
 在平板电脑上按照TODESK
@@ -32,8 +33,10 @@ regedit 进入注册表
 
 路径：
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
+
 增加参数：
 ScreenControlService
+
 参数值：
 "C:\Windows\System32\cmd.exe" /c start "" "C:\test\dist\test.exe"
 
