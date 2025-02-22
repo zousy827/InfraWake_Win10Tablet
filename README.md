@@ -52,3 +52,17 @@ ScreenControlService
 
 
 
+隐藏黑窗口运行程序：
+
+使用 pyinstaller 将脚本打包为无控制台的Windows服务程序：
+
+安装打包工具：
+
+pip install pyinstaller
+
+创建打包命令（在项目目录执行）：
+
+pyinstaller --noconsole --onefile --uac-admin your_script_name.py
+
+
+
